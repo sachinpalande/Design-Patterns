@@ -11,9 +11,6 @@ class Coffee
 protected:
 	char _type[15];
 public:
-	Coffee()
-	{
-	}
 	char *getType()
 	{
 		return _type;
