@@ -1,5 +1,6 @@
-// 03_02_FactoryImp_Start.cpp 
-//
+/*
+    solves the problem of creating product objects without specifying their concrete classes.
+*/
 #include <iostream>
 #include <cstring>
 
