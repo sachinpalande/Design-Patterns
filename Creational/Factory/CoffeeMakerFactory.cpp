@@ -49,25 +49,34 @@ public:
 class CoffeeMakerFactory
 {
     public:
-    Coffee *getCoffee()
+    virtual Coffee *getCoffee() = 0;
+};
+
+class EspressoFactory : public CoffeeMakerFactory
+{
+public:
+    Coffee *getCoffee() override
     {
-        int choice;
-        cin >> choice;
-        switch(choice)
-        {
-            case 1:
-                return new Espresso;
-            case 2 :
-                return new Cappuccino;
-            default:
-                return nullptr;
-        }
+        return new Espresso;
+    }
+};
+
+class CappuccinoFactory : public CoffeeMakerFactory
+{
+public:
+    Coffee *getCoffee() override
+    {
+        return new Cappuccino;
     }
 };
 
 int main()
 {
-    CoffeeMakerFactory *coffeeMakerFactory;
+    CoffeeMakerFactory *coffeeMaker1 = new EspressoFactory;
+    CoffeeMakerFactory *coffeeMaker2 = new CappuccinoFactory;
+    
     Coffee *cup;
-    cup = coffeeMakerFactory->getCoffee();
+    cup = coffeeMaker1->getCoffee();
+    
+    cup = coffeeMaker2->getCoffee();
 }
