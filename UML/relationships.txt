@@ -1,0 +1,36 @@
+
+
+Association: 
+    - represents how two entities are linked to each other within a system.
+    - one-to-one, one-to-many, many-to-one, and many-to-many
+    - bi-directional, unidirectional, reflexive.
+    - e.g. 1) A single teacher has multiple students.[Teacher]------1..*[Student]
+           2) A single student can associate with many teachers.[Student]------1..*[Teacher]
+    - represented using an arrow.
+    - Directed Association (Person--->Company) (Person works for company, not company works for Person)
+
+Dependency:
+    - relationship in which a client is dependent on the supplier.
+    - change to the supplier necessitates a change to the client
+    - represented by dotted arrow.
+    ( <<use>> -When the packages are created in UML, the use of stereotype is used as it describes that the elements of the source package can also exist in the target package. 
+    It specifies that the source package uses some of the elements of the target package.)
+
+Aggregation:
+    - Has-a relationship
+    - a child can exist independent of the parent.(Weak Association)
+    - e.g. Car and Wheel
+    - represented by a straight line with an empty diamond at one end.
+
+Composition:
+    - Has-a (Part-of) relationship.
+    - the child cannot exist independent of the parent.(Strong Association)
+    - e.g. Person has Heart, Brain, Legs.
+    - represented by a straight line with a black diamond at one end.
+
+Generalization:
+    - Is-a relationship.
+    - Also known as inheritance
+
+Realization:
+    - same as Generalization, except use in case of interface.
