@@ -1,5 +1,10 @@
 /*
     When to use: Need only one object or instance at a time.
+
+    Solution:
+    Steps 1. Make constructor private & delete Copy constructor to avoid instanciation outside class.
+          2. Make static instance and follow lazy initialization.
+          3. To make it thread safe, can use Eager Initialization or use mutex.   
 */
 
 #include <iostream>
