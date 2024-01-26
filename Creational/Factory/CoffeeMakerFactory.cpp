@@ -1,5 +1,8 @@
 /*
     solves the problem of creating product objects without specifying their concrete classes.
+
+    Solution: replace direct object construction calls with calls to a special factory method.
+    Objects returned by a factory method are often referred to as products.
 */
 #include <iostream>
 #include <cstring>
