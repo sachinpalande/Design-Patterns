@@ -1,0 +1,8 @@
+Builder:
+    - Allows you to create complex objects step-by-step. 
+    - It separates the construction of an object from its representation, allowing you to create different representations of the same object. 
+    - This pattern is used when the creation of an object is a complex process and involves multiple steps.
+
+Examples:
+    - Computer with cpu, motherboard,ram, storage, hasWifi, hasBluetooth, hasTouchscreen
+    - Burger bread, meat, cheese, vegetables
