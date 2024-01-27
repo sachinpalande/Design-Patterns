@@ -1,6 +1,7 @@
-lets you copy existing objects without making your code dependent on their classes.
+Prototype:
+    - lets you copy existing objects without making your code dependent on their classes.
+    - This will not only allow to copy public but private/protected properties.
 
-
-//What's the difference between Prototype design pattern and copy constructor
-It would be difficult to use the former to implement the latter as copy constructor is intended to be used when knowing exact instance of the object, 
-while prototype is used when there could be any possible implementation of some interface and you just want to obtain new object of exactly the same implementation
+Q. What's the difference between Prototype design pattern and copy constructor ?
+    - It would be difficult to use the former to implement the latter as copy constructor is intended to be used when knowing exact instance of the object, 
+      while prototype is used when there could be any possible implementation of some interface and you just want to obtain new object of exactly the same implementation
