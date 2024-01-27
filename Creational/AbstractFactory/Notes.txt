@@ -1,0 +1,12 @@
+- Abstract factory is like factory of factories.
+"lets you produce families of related objects without specifying their concrete classes."
+
+- When to use : If the product is made of many sub-product and those sub-product can be increased in future.
+
+- Solution: 1. Explicitly declare interfaces for each distinct product of the product family
+            2. Create all Sub-product classes and implement them
+            3. Create Factory/Creator abstract class and have make functions for sub-products.
+            4. Implement the make function in child classes of factory.
+
+- Examples: 1. Furniture makes "Chair & Sofa" of type "Modern & Victorian" --> if have to add another furniture like "Table" or type as "Italian" it will be easy.
+            2. Theme for Editor "Black & White" for "Background and Text" 
