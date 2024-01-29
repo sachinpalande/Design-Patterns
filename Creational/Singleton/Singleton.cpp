@@ -14,7 +14,8 @@ class Singleton
 {
     static Singleton *instance;
 
-    //Singleton(){}
+    Singleton(){}
+    Singleton( const Singleton& ) = delete;
 
     public:
     static Singleton *getInstance()
