@@ -2,7 +2,7 @@
     When to use: Need only one object or instance at a time.
 
     Solution:
-    Steps 1. Make constructor private & delete Copy constructor to avoid instanciation outside class.
+    Steps 1. Make constructor private & delete Copy constructor to avoid instantiation outside class.
           2. Make static instance and follow lazy initialization.
           3. To make it thread safe, can use Eager Initialization or use mutex.   
 */
@@ -14,7 +14,8 @@ class Singleton
 {
     static Singleton *instance;
 
-    //Singleton(){}
+    Singleton(){}
+    Singleton( const Singleton& ) = delete;
 
     public:
     static Singleton *getInstance()
