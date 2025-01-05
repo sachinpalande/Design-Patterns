@@ -4,7 +4,7 @@ add_executable(SingletonApp
 )
 
 # Include the current directory to locate headers
-target_include_directories(SingletonApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(SingletonApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Singleton)
 
 # Create an executable for FurnitureFactory
 add_executable(SingletonWithMutexApp
@@ -12,7 +12,7 @@ add_executable(SingletonWithMutexApp
 )
 
 # Include the current directory to locate headers
-target_include_directories(SingletonWithMutexApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(SingletonWithMutexApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/SingletonWithMutex)
 
 # Find the pthread library
 find_package(Threads REQUIRED)

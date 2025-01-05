@@ -4,7 +4,7 @@ add_executable(FurnitureFactoryApp
 )
 
 # Include the current directory to locate headers
-target_include_directories(FurnitureFactoryApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(FurnitureFactoryApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/FurnitureFactory)
 
 # Create an executable for ThemeFactory
 add_executable(ThemeFactoryApp
@@ -12,4 +12,4 @@ add_executable(ThemeFactoryApp
 )
 
 # Include the current directory to locate headers
-target_include_directories(ThemeFactoryApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(ThemeFactoryApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ThemeFactory)

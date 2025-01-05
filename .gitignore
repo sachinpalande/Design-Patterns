@@ -1,5 +1,6 @@
 # Ignore build directory
 build/
+ninjaBuild/
 
 # Ignore CMake files
 CMakeCache.txt

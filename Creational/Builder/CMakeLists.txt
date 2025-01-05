@@ -4,4 +4,4 @@ add_executable(CarBuilderApp
 )
 
 # Include the current directory to locate headers
-target_include_directories(CarBuilderApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(CarBuilderApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CarBuilder)

@@ -85,7 +85,7 @@ int main ()
     FurnitureFactory *furnitureFactory;
     int ch;
 
-    cout << "Select the furniture type : 1. Modern  2. Victorian";
+    cout << "Select the furniture type : 1. Modern  2. Victorian  " << endl;
     cin >> ch;
     switch (ch)
     {

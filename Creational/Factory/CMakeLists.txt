@@ -13,7 +13,7 @@ add_executable(ShapeFactoryApp
 )
 
 # Include the current directory to locate headers
-target_include_directories(ShapeFactoryApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(ShapeFactoryApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ShapeFactory)
 
 
 # Create an executable for FurnitureFactory
@@ -22,4 +22,4 @@ add_executable(TransportFactoryApp
 )
 
 # Include the current directory to locate headers
-target_include_directories(TransportFactoryApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(TransportFactoryApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/TransportFactory)

@@ -4,4 +4,4 @@ add_executable(PrototypeApp
 )
 
 # Include the current directory to locate headers
-target_include_directories(PrototypeApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(PrototypeApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Prototype)
