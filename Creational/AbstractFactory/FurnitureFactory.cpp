@@ -84,6 +84,8 @@ int main ()
 {
     FurnitureFactory *furnitureFactory;
     int ch;
+
+    cout << "Select the furniture type : 1. Modern  2. Victorian";
     cin >> ch;
     switch (ch)
     {
